@@ -1,13 +1,141 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Space+Mono&display=swap');
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background: rgba(238, 242, 243, 0.5);
+}
+
+.container {
+    display: flex;
+    width: 100%;
+  }
+  
+  .slide {
+    flex: 1;
+    height: 100vh;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all 500ms linear;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slide h2 {
+    position: absolute;
+    color: white;
+    opacity: 0;
+    font-size: 2.5rem;
+    text-shadow: .5rem .5rem .5rem black;
+    margin-top: -30px;
+    font-family: 'Righteous', cursive;
+  }
+
+  /* .slide h2 .inactive{
+    transform: rotateY('90deg');
+  } */
+  
+  .slide.active {
+    flex: 10;
+  }
+
+  button{
+    position: absolute;
+    margin-top: 8rem;
+    box-shadow: .3rem .3rem 1rem rgba(0, 0, 0);
+    border-radius: .7rem;
+    color: dark;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1rem;
+    background: white;
+    color: dark;
+    font-family: 'Space Mono', monospace;
+  }
+  
+  .slide-arrow{
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5555;
+    border-radius: 50%;
+  }
+
+  .slide-arrow i{
+    color: white;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+
+.slider-arrow-prev{
+  left: .5rem;
+}
+
+.slider-arrow-next{
+  right: .5rem;
+}
+
+
+@media (max-width: 1200px) {
+  .slide h2 {
+    font-size: 2rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .slide h2 {
+    font-size: 1.8rem;
+  }
+
+  button {
+    font-size: .9rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .slide h2 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: .7rem;
+    margin-top: 5.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .slide h2 {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 0.5rem;
+    margin-top: 4.5rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .slide h2 {
+    font-size: 1.1rem;
+  }
+
+  button {
+    font-size: 0.3rem;
+    margin-top: 3rem;
+  }
 }
