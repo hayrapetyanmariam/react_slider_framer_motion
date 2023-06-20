@@ -89,8 +89,6 @@ export const Slider = ({slides}) => {
               initial="inactive"
               animate={isActive ? 'active' : 'inactive'}
               transition={{ duration: 1.3, delay: 0.8 }}
-              whileHover={{scale: 1.5}}
-              whileTap={{scale: 1}}
         >
               {slide.title}
         </motion.h2>

@@ -11,7 +11,7 @@ body{
 
 .container {
     display: flex;
-    width: 100%;
+    width: 96%;
   }
   
   .slide {
@@ -39,10 +39,6 @@ body{
     font-family: 'Righteous', cursive;
   }
 
-  /* .slide h2 .inactive{
-    transform: rotateY('90deg');
-  } */
-  
   .slide.active {
     flex: 10;
   }
@@ -56,6 +52,7 @@ body{
     border: none;
     padding: 10px 30px;
     font-size: 1rem;
+    cursor: pointer;
     background: white;
     color: dark;
     font-family: 'Space Mono', monospace;
@@ -90,6 +87,7 @@ body{
 @media (max-width: 1200px) {
   .slide h2 {
     font-size: 2rem;
+    text-align: center;
   }
 
   button {
@@ -97,45 +95,51 @@ body{
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 969px) {
   .slide h2 {
     font-size: 1.8rem;
+    text-align: center;
   }
 
   button {
-    font-size: .9rem;
+    font-size: 1rem;
+    margin-top: 5rem;
   }
 }
 
 @media (max-width: 767px) {
   .slide h2 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    text-align: center;
   }
 
   button {
-    font-size: .7rem;
+    font-size: .8rem;
     margin-top: 5.5rem;
   }
 }
 
 @media (max-width: 500px) {
   .slide h2 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    text-align: center;
   }
 
   button {
-    font-size: 0.5rem;
-    margin-top: 4.5rem;
+    font-size: 0.7rem;
+    margin-top: 4.7rem;
   }
 }
 
 @media (max-width: 350px) {
   .slide h2 {
     font-size: 1.1rem;
+    text-align: center;
   }
 
   button {
-    font-size: 0.3rem;
-    margin-top: 3rem;
+    font-size: 0.7rem;
+    margin-top: 3.9rem;
+    padding: 7px 10px;
   }
 }
