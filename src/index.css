@@ -11,7 +11,7 @@ body{
 
 .container {
     display: flex;
-    width: 96%;
+    width: 100%;
   }
   
   .slide {
@@ -96,6 +96,11 @@ body{
 }
 
 @media (max-width: 969px) {
+
+  .container{
+    width: 99%;
+  }
+
   .slide h2 {
     font-size: 1.8rem;
     text-align: center;
