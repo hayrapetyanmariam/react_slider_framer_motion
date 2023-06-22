@@ -12,12 +12,12 @@ body{
 .container {
     display: flex;
     width: 100%;
+    margin: 0 auto;
   }
   
   .slide {
     flex: 1;
     height: 100vh;
-    margin: 0 auto;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -99,6 +99,7 @@ body{
 
   .container{
     width: 99%;
+    margin: 0 auto;
   }
 
   .slide h2 {
@@ -116,6 +117,7 @@ body{
 
   .container{
     width: 97%;
+    margin: 0 auto;
   }
 
   .slide h2 {
@@ -143,7 +145,8 @@ body{
 @media (max-width: 500px) {
 
   .container{
-    width: 96%;
+    width: 94%;
+    margin: 0 auto;
   }
 
   .slide h2 {
@@ -157,16 +160,11 @@ body{
   }
 }
 
-@media(max-width: 400px){
-  .container{
-    width: 95%;
-  }
-}
-
 @media (max-width: 350px) {
 
   .container{
     width: 94%;
+    margin: 0 auto;
   }
 
   .slide h2 {
