@@ -113,6 +113,11 @@ body{
 }
 
 @media (max-width: 767px) {
+
+  .container{
+    width: 98%;
+  }
+
   .slide h2 {
     font-size: 1.7rem;
     text-align: center;
@@ -125,6 +130,11 @@ body{
 }
 
 @media (max-width: 500px) {
+
+  .container{
+    width: 97%;
+  }
+
   .slide h2 {
     font-size: 1.4rem;
     text-align: center;
@@ -137,6 +147,11 @@ body{
 }
 
 @media (max-width: 350px) {
+
+  .container{
+    width: 96%;
+  }
+
   .slide h2 {
     font-size: 1.1rem;
     text-align: center;
